@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 32px;
+}
+.header-extras {
+    li{
+        float: left;
+        margin-left: 20px;
+    }
+    list-style-type: none;
+}
+.he-text{
+    font-size: 16px;
+}
+.second-logo{
+    font-size: 20px;
+}

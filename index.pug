@@ -1,23 +1,102 @@
 doctype html
 html(lang="en")
   head
-    title Компания по вывозу
+    title Название компании
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
-    .container 
-     .header  
-        .logo
-          |Название компании
-          br
-          .second-logo Вывоз мусора
-        ul.header-extras 
-          li
-            .he-text Часы работы
-            span.second-text Пн-Пт 8:00-18:00
-          li
-            .he-text Адрес
-            span.second-text ул. Московская, д. 1
-          li 
-            .he-text Телефон
-            span.second-text +7 (123) 456 78 99
+    #header
+      .container
+        #logo 
+          #firs-logo
+            a(href="#")
+            |Название компании 
+            #second-logo Вывоз мусора
+          .he-text
+            |Часы работы
+            .secod-text Пн-Пт с 9:00 до 19:00
+          .he-text
+            |Телефон
+            .secod-text +7 (123) 123 12 12
+          .he-text
+            |Адрес
+            .secod-text ул. Московская, д.1 
+      .menu
+          ul.nav
+            li 
+              a(href="#") 
+                |Главная
+            li 
+              a(href="#") 
+               |Услуги
+            li 
+              a(href="#") 
+               |Отзывы 
+            li 
+              a(href="#") 
+               |Акции
+            li 
+              a(href="#") 
+               |Контакты
+            li 
+              a(href="#") 
+               |О компании
+    .banner
+      .wrapper 
+        h1
+          |Вывоз мусора
+        p
+          |Описание акции или другая дополнительная информация
+        a.btn(href="#")
+          |Подробнее
+    .bgwhite 
+      .container-top
+        .fixed-container
+          .card-container 
+            .card-item 
+              .media
+                img(src="placeholder", alt="")
+              .desc
+                h3 
+                  |Вывоз строительного мусора
+                p 
+                  |От 6000 руб.
+                a.btn(href="#")
+                  |Подробности
+            .card-item
+              .media
+                img(src="placeholder", alt="")
+              .desc
+                h3 
+                   |Вывоз мусора из квартиры
+                p 
+                  |От 4000 руб.
+                a.btn(href="#") 
+                  |Подробности
+            .card-item
+              .media
+                img(src="placeholder", alt="")
+              .desc
+                h3 
+                 |Вывоз бытового мусора
+                p 
+                 |От 2500 руб.
+                a.btn(href="#")
+                 |Подробности
+            .card-item
+              .media
+                img(src="placeholder", alt="")
+              .desc
+                h3 
+                 |Вывоз промышленных отходов
+                p 
+                 |От 7000 руб.
+                a.btn(href="#")
+                 |Подробности
+    .bggrey 
+      .container-top
+        .fixed-container
+          .head-block
+            h2
+             |Наши Преимущества
+             hr

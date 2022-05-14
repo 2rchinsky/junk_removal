@@ -1,21 +1,36 @@
-.header {
+#header {
+    position: relative;
+    background-color: #fff;
+
+}
+
+#logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    font-size: 32px;
+
+#firs-logo {
+    font-size: 36px;
 }
-.header-extras {
-    li{
-        float: left;
-        margin-left: 20px;
-    }
-    list-style-type: none;
-}
-.he-text{
-    font-size: 16px;
-}
-.second-logo{
+
+#second-logo {
     font-size: 20px;
+}
+
+.he-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+
+    .secod-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: grey;
+    }
+}
+
+.menu {
+    height: 60px;
+    background-color: black;
 }

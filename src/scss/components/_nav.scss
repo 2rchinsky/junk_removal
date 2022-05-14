@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+
+    li {
+        margin: 0 25px;
+        position: relative;
+
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+}

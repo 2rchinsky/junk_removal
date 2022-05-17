@@ -1,36 +1,59 @@
-#header {
-    position: relative;
-    background-color: #fff;
-
-}
-
-#logo {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-#firs-logo {
-    font-size: 36px;
-}
+    .logo-deck {
+        .logo {
+            a {
+                font-size: 36px;
+            }
 
-#second-logo {
-    font-size: 20px;
-}
 
-.he-text {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
+        }
 
-    .secod-text {
-        font-size: 16px;
-        font-weight: 400;
-        color: grey;
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
+
+    .he-deck {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        .he-block {
+            display: flex;
+
+            .icon {
+                display: flex;
+                align-items: center;
+                padding-right: 15px;
+
+                i {
+                    font-size: 25px;
+                    color: $softGreen;
+                }
+            }
+
+            .he-text {
+                font-size: 16px;
+                font-weight: bold;
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #666;
+                    padding-top: 3px;
+                }
+            }
+        }
     }
 }
 
 .menu {
     height: 60px;
-    background-color: black;
+    background-color: $softGreen;
 }

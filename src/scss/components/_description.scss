@@ -1,0 +1,33 @@
+.description {
+    text-align: center;
+    padding-bottom: 30px;
+
+    h2 {
+
+        font-size: 36px;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+    }
+
+    p {
+
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    .btn {
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        border-bottom: 2px solid rgb(1, 59, 7);
+        background-color: $softGreen;
+        padding: 12px 25px 10px;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background-color: rgb(0, 78, 8);
+    }
+}

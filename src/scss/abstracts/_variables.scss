@@ -4,10 +4,11 @@ $softRed: hsl(14, 88%, 65%);
 $veryDarkGrayishBlue: hsl(237, 12%, 33%);
 $darkGrayishBlue: hsl(240, 6%, 50%);
 $lightGrayishBlue: hsl(240, 5%, 91%);
-$softViolet: hsl(273, 75%, 66%);
-$softBlue: hsl(240, 73%, 65%);
+$softViolet: hsl(273, 100%, 46%);
+$softBlue: hsl(251, 82%, 32%);
 $white: hsl(100, 100%, 100%);
-$darkRed: #4d0808;
+$darkRed: rgb(113, 0, 0);
+$softGreen: rgb(39, 100, 10);
 // COLORS
 $backgroundGradient: linear-gradient($softViolet, $softBlue);
 $cardBackground: $white;

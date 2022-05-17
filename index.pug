@@ -7,23 +7,29 @@ html(lang="en")
     script(src="https://use.fontawesome.com/030eb04ca9.js")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   body
-    #header
-      .container
-        #logo 
-          #firs-logo
-            a(href="#")
-            |Название компании 
-            #second-logo Вывоз мусора
-          .he-text
-            |Часы работы
-            .secod-text Пн-Пт с 9:00 до 19:00
-          .he-text
-            |Телефон
-            .secod-text +7 (123) 123 12 12
-          .he-text
-            |Адрес
-            .secod-text ул. Московская, д.1 
-      .menu
+    .container
+      .header 
+        .logo-deck
+          .logo
+            a Название компании
+          h2 Вывоз мусора
+        .he-deck 
+          .he-block 
+            .icon 
+              i.fa.fa-clock-o(aria-hidden="true")
+            .he-text Часы работы
+              span Без выходных с 10 до 18
+          .he-block 
+            .icon
+              i.fa.fa-phone(aria-hidden="true")
+            .he-text Телефон
+              span +7 (123) 100 10 10
+          .he-block
+            .icon
+              i.fa.fa-map-marker(aria-hidden="true")
+            .he-text Адрес
+              span Ул. Московская, д. 1
+    .menu
           ul.nav
             li 
               a(href="#") 
@@ -141,3 +147,34 @@ html(lang="en")
                 a(href="#") 5 газелей по цене 4
               p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
               a.btn(href="#") Подробности
+    .ban
+      .container 
+        .head-block
+          h2 О нас в цифрах
+            hr
+        .block-deck
+          .block-item 
+            span 10
+            p Лет
+          .block-item 
+            span 500+
+            p Клиентов
+          .block-item
+            span 100
+            p  Проектов
+          .block-item 
+            span 10000
+            p Пачек сиг
+    .container 
+      .description
+        h2 О нас
+        p Текст о компании – это идеальная возможность для отстройки от конкурентов. Нужно оперировать фактами. Пусть их будет немного, но именно они будут демонстрировать уникальность вашей компании. <br>  Шаблон написания текста о компании: <br> чем занимаемся; что у нас получается лучше всего; примеры наших работ; в чём отличие компании; наша команда в лицах; наша компания в цифрах; что о нас говорят клиенты; какие гарантии мы даём.
+        a.btn(href="")  Подробнее
+    .bggrey
+      .container 
+        .bor-block 
+          h3 Торопитесь, скидка 15% до конца месяца!
+          p Скидка — сумма, на которую снижается продажная цена товара, реализуемого покупателю. Исторически скидки появились и стали использоваться в условиях уличной торговли товарами, когда продавец в результате торга предоставлял скидку тому покупателю, который приобретает больше товаров.
+          a.btn(href="") Подробнее
+
+

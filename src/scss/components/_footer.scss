@@ -1,0 +1,25 @@
+.bg-light.black {
+    background-color: rgb(50, 50, 50);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-items {
+            display: flex;
+        }
+
+        span {
+            display: block;
+            color: #888;
+        }
+    }
+}
+
+.bg-dark-black {
+    background-color: rgb(35, 35, 35);
+
+    .container {
+        text-align: center;
+    }
+}

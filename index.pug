@@ -147,7 +147,7 @@ html(lang="en")
                 a(href="#") 5 газелей по цене 4
               p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
               a.btn(href="#") Подробности
-    .ban
+    .parallax 
       .container 
         .head-block
           h2 О нас в цифрах
@@ -229,3 +229,34 @@ html(lang="en")
             .block_info 
               p Сайт просто супер. Ребята молодцы, делают свою работу на высоком уровне. Товары всегда новые, цены вполне доступные. Часто проводятся скидки, акции, что особо радует :) 
               span - Алексей
+    .parallax  
+      .container 
+        .head-block   
+          h2 Вопросы?
+          p Отправьте заявку и мы с вами свяжемся 
+        .forms 
+          form(action="#")
+            .forms-block
+              input(type="text" name="name" placeholder="Имя")
+              input(type="tel" name="phone" placeholder="Телефон")
+              input(type="text" name="mail" placeholder="Email")
+            textarea(name="message" rows="10" placeholder="Сообщение") 
+            .btn-send
+              button Отправить
+    .footer  
+      .bg-light.black 
+        .container 
+          .footer-items 
+            .foot-item 
+              span Звоните:
+              span +7 (123) 100 10 10
+            .foot-item 
+              span E-mail
+              span company-mail@gmail.com
+          .foot-icons 
+            span Lorem ipsum dolor sit amet.
+      .bg-dark-black
+        .container
+          h3 Название комании © 2022
+          p All rights reserved
+

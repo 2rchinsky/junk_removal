@@ -1,5 +1,13 @@
 * {
   box-sizing: border-box;
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+    //outline: 1px red dashed;
+
+  }
 }
 
 html {

@@ -1,0 +1,23 @@
+.map {
+    .head-block {
+        h2 {
+            color: black;
+
+            hr {
+                border-top: 2px solid black;
+                margin-bottom: 25px;
+            }
+        }
+
+        p {
+            color: black;
+        }
+
+
+    }
+
+    .map-item {
+        background: url(/src/images/map-ban.PNG) 0 0/100% auto no-repeat;
+        height: 400px;
+    }
+}

@@ -36,11 +36,13 @@
                     font-size: 26px;
                     color: black;
 
+                    &:hover {
+                        color: $softGreen;
+                    }
+
                 }
 
-                a:hover {
-                    color: $softGreen;
-                }
+
 
             }
 

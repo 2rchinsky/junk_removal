@@ -1,0 +1,25 @@
+.head-block-glider {
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+
+        hr {
+            margin-top: 30px;
+            border: none;
+            border-top: 2px solid rgb(0, 0, 0);
+            max-width: 45px;
+            margin-bottom: 45px;
+        }
+    }
+}
+
+.glider {
+    div {
+        img {
+            height: 130px;
+            width: 170px;
+        }
+    }
+}

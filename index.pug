@@ -6,6 +6,8 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     script(src="https://use.fontawesome.com/030eb04ca9.js")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   body
     .container
       .header 
@@ -63,7 +65,7 @@ html(lang="en")
           .card-container 
             .card-item 
               .media
-                img
+                img(src="", alt="")
               .desc
                 h3 
                   |Вывоз строительного мусора
@@ -73,6 +75,7 @@ html(lang="en")
                   |Подробности
             .card-item
               .media
+                img(src="", alt="")
               .desc
                 h3 
                    |Вывоз мусора из квартиры
@@ -228,6 +231,33 @@ html(lang="en")
             .block_info 
               p Сайт просто супер. Ребята молодцы, делают свою работу на высоком уровне. Товары всегда новые, цены вполне доступные. Часто проводятся скидки, акции, что особо радует :) 
               span - Алексей
+    .container 
+      .head-block-glider
+        h2 Наши партнеры
+          hr
+      .glider-contain
+        .glider
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+          div 
+            img
+        <div role="tablist" class="dots"></div>
     .parallax-sec  
       .container 
         .head-block   
@@ -243,8 +273,15 @@ html(lang="en")
             textarea(name="message" rows="10" placeholder="Сообщение") 
             .btn-send
               button Отправить
+    .map 
+      .container
+        .head-block 
+          h2 Наш Адрес
+            p Ул. Московская, д. 1
+            hr
+      .map-item
     .footer  
-      .bg-light.black 
+      .bg-footer-top 
         .container 
           .footer-items 
             .foot-item 
@@ -255,7 +292,7 @@ html(lang="en")
               span company-mail@gmail.com
           .foot-icons 
             span Lorem ipsum dolor sit amet.
-      .bg-dark-black
+      .bg-footer-bottom
         .container
           h3 Название комании © 2022
           p All rights reserved

@@ -6,12 +6,17 @@
         justify-content: space-between;
 
         .footer-items {
+            max-width: 45%;
+            width: 100%;
             display: flex;
+            justify-content: space-between;
         }
 
         span {
             display: block;
             color: #888;
+            font-size: 20px;
+            line-height: 35px;
         }
     }
 }
@@ -21,5 +26,16 @@
 
     .container {
         text-align: center;
+
+        h3 {
+            font-size: 18px;
+            color: #f5f5f5;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 16px;
+            color: #f5f5f5;
+        }
     }
 }

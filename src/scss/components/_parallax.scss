@@ -7,6 +7,23 @@
     height: 450px;
 }
 
+.parallax-sec {
+    background: linear-gradient(rgba(0, 0, 0, 0.679),
+            rgba(0, 0, 0, 0.679)), url(/src/images/GazelN.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 550px;
+
+    .head-block {
+        .sec {
+            margin-top: 40px;
+            border: none;
+            border-top: 2px solid #e3e3e3;
+        }
+    }
+}
+
 .container {
 
     .head-block {

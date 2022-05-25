@@ -6,7 +6,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.pug",
       favicon: "./favicon.ico",
-    }),
+    },
+      {
+        template: './services.pug',
+        favicon: "./favicon.ico",
+      }),
     new MiniCssExtractPlugin(),
   ],
   module: {
@@ -23,6 +27,19 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name]-[hash].[ext]',
+              outputPath: 'src/images/',
+              publicPath: 'src/images/'
+            }
+          }
+        ]
+      }
     ],
   },
 };

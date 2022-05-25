@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
 
+
+    @media #{$mobile} {
+        flex-direction: column;
+    }
+
     .logo-deck {
         .logo {
             a {
@@ -22,6 +27,10 @@
         display: flex;
         justify-content: space-between;
         width: 60%;
+
+        @media #{$mobile} {
+            display: none;
+        }
 
         .he-block {
             display: flex;

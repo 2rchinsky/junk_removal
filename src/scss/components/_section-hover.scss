@@ -23,11 +23,24 @@
     margin-top: 32px;
     justify-content: space-between;
 
+    @media #{$mobile} {
+        justify-content: none;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .blok_icon {
         text-align: center;
         max-width: 330px;
         padding: 15px;
+
+        @media #{$tablet} {
+            max-width: 40%;
+        }
+
+        @media #{$mobile} {
+            max-width: 70%;
+        }
 
         i {
             font-size: 30px;
@@ -48,12 +61,22 @@
             font-size: 24px;
             font-weight: 400;
             margin: 18px 0;
+
+            @media #{$mobile} {
+                font-size: 18px;
+                font-weight: bold;
+            }
         }
 
         p {
             font-size: 18px;
             color: #666;
             line-height: 30px;
+
+            @media #{$mobile} {
+                font-size: 15px;
+                font-weight: bold;
+            }
         }
     }
 }

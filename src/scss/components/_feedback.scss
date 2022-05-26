@@ -31,6 +31,10 @@
             width: 64px;
             margin-right: 15px;
 
+            @media #{$tablet} {
+                display: none;
+            }
+
             img {
                 display: block;
                 //height: 64px;
@@ -39,6 +43,10 @@
 
         .block_info {
             max-width: 90%;
+
+            @media #{$tablet} {
+                max-width: 100%;
+            }
 
             p {
                 font-size: 18px;

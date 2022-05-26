@@ -2,8 +2,19 @@
   max-width: 1170px;
   width: 100%;
   padding: 40px 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+
+  @media #{$tablet} {
+    max-width: 80%;
+  }
+
+  @media #{$laptop} {
+    max-width: 80%;
+  }
+
+  @media #{$mobile} {
+    max-width: 80%;
+  }
 }
 
 .container-top {

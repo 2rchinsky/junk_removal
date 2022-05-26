@@ -1,13 +1,14 @@
 doctype html
 html(lang="en")
   head
-    title Название компании
+    title Вывоз мусора
     meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="viewport" content="width=device-width")
     script(src="https://use.fontawesome.com/030eb04ca9.js")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1a1fa25e-d422-440e-bf83-e78f074fa271&lang=ru_RU" type="text/javascript"></script>
   body
     .container
       .header 
@@ -16,11 +17,12 @@ html(lang="en")
             a Название компании
           h2 Вывоз мусора
         .he-deck 
-          .he-block 
-            .icon 
-              i.fa.fa-clock-o(aria-hidden="true")
-            .he-text Часы работы
-              span Без выходных с 10 до 18
+          .he-block-tablet
+            .he-block 
+              .icon 
+                i.fa.fa-clock-o(aria-hidden="true")
+              .he-text Часы работы
+                span Без выходных с 10 до 18
           .he-block 
             .icon
               i.fa.fa-phone(aria-hidden="true")
@@ -31,27 +33,31 @@ html(lang="en")
               i.fa.fa-map-marker(aria-hidden="true")
             .he-text Адрес
               span Ул. Московская, д. 1
-    .menu
-          ul.nav
-            li 
-              a(href="#") 
-                |Главная
-            li 
-              a(href="#") 
-               |Услуги
-            li 
-              a(href="#") 
-               |Отзывы 
-            li 
-              a(href="#") 
-               |Акции
-            li 
-              a(href="#") 
-               |Контакты
-               
-            li 
-              a(href="#") 
-               |О компании
+    .menu-block
+        .menu-wrap
+          input.toggler(type='checkbox')
+          .hamburger
+            div
+          .menu
+            div
+              div
+                ul
+                  li
+                    a(href='#') Home1
+                  li
+                    a(href='#') About
+                  li
+                    a(href='#') Services
+                  li
+                    a(href='#') Contact
+                  li
+                    a(href='#') Home
+                  li
+                    a(href='#') About
+                  li
+                    a(href='#') Services
+                  li
+                    a(href='#') Contact
     .banner
       .container 
         h1
@@ -60,12 +66,11 @@ html(lang="en")
           |Описание акции или другая дополнительная информация
         a.btn(href="#")
           |Подробнее
-    .container-top
-        .fixed-container
-          .card-container 
+    .container
+      .card-container 
             .card-item 
               .media
-                img(src=require("./src/images/alarm.png").default, alt="")
+                img(src=require("./src/images/Stroitelnyi.png").default, alt="")
               .desc
                 h3 
                   |Вывоз строительного мусора
@@ -75,7 +80,7 @@ html(lang="en")
                   |Подробности
             .card-item
               .media
-                img(src="", alt="")
+                img(src=require("./src/images/kvartinryi.png").default, alt="")
               .desc
                 h3 
                    |Вывоз мусора из квартиры
@@ -85,20 +90,20 @@ html(lang="en")
                   |Подробности
             .card-item
               .media
-                img(src="", alt="")
+                img(src=require("./src/images/bytovoyi.png").default, alt="")
               .desc
                 h3 
-                 |Вывоз бытового мусора
+                 |Вывоз бытового мусора 
                 p 
                  |От 2500 руб.
                 a.btn(href="#")
                  |Подробности
             .card-item
               .media
-                img(src="", alt="")
+                img(src=require("./src/images/promysh.png").default, alt="")
               .desc
                 h3 
-                 |Вывоз промышленных отходов
+                 |Вывоз промышленных отходов 
                 p 
                  |От 7000 руб.
                 a.btn(href="#")
@@ -136,19 +141,15 @@ html(lang="en")
           hr
         .block 
           .block_item
-            img(src="#", alt="")
-            .block_media
-              h3
-                a(href="#") Вывоз на утилизацию
-              p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
-              a.btn(href="#") Подробности
+            h3
+              a(href="#") Вывоз на утилизацию
+            p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+            a.btn(href="#") Подробности
           .block_item
-            img(src="#", alt="")
-            .block_media 
-              h3
-                a(href="#") 5 газелей по цене 4
-              p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
-              a.btn(href="#") Подробности
+            h3
+              a(href="#") 5 газелей по цене 4
+            p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+            a.btn(href="#") Подробности
     .parallax 
       .container 
         .head-block
@@ -178,8 +179,8 @@ html(lang="en")
           h3 Торопитесь, скидка 15% до конца месяца!
           p Скидка — сумма, на которую снижается продажная цена товара, реализуемого покупателю. Исторически скидки появились и стали использоваться в условиях уличной торговли товарами, когда продавец в результате торга предоставлял скидку тому покупателю, который приобретает больше товаров.
           a.btn(href="") Подробнее
-    .container 
-      .news 
+    .news 
+      .container 
         h2 Новости
           hr
         .media-block 
@@ -207,7 +208,7 @@ html(lang="en")
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa dolorem, numquam aliquam voluptatum mollitia reiciendis, consequatur ratione veniam, debitis rerum perspiciatis distinctio corrupti aliquid magni nemo optio accusantium temporibus!
             a.cont(href="") Читать далее...
             hr
-    .bggrey
+    .bgwhite
       .container 
         .feedback 
           h2 Отзывы
@@ -231,33 +232,32 @@ html(lang="en")
             .block_info 
               p Сайт просто супер. Ребята молодцы, делают свою работу на высоком уровне. Товары всегда новые, цены вполне доступные. Часто проводятся скидки, акции, что особо радует :) 
               span - Алексей
-    .container 
-      .head-block-glider
-        h2 Наши партнеры
-          hr
-      .glider-contain
-        .glider
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-          div 
-            img
-        <div role="tablist" class="dots"></div>
+    .bggrey
+      .container 
+        .head-block-glider
+          h2 Наши партнеры
+            hr
+        .glider-contain
+          .glider
+            div 
+              img
+            div 
+              img
+            div 
+              img
+            div 
+              img
+            div 
+              img
+            div 
+              img
+            div 
+              img
+            div 
+              img
+            div 
+              img
+          <div role="tablist" class="dots"></div>
     .parallax-sec  
       .container 
         .head-block   
@@ -270,16 +270,17 @@ html(lang="en")
               input(type="text" name="name" placeholder="Имя")
               input(type="tel" name="phone" placeholder="Телефон")
               input(type="text" name="mail" placeholder="Email")
-            textarea(name="message" rows="10" placeholder="Сообщение") 
+            textarea(name="message" rows="11" placeholder="Сообщение") 
             .btn-send
               button Отправить
-    .map 
+            p Отправляя данную форму, вы соглашаетесь c Политикой конфиденциальности
+    .map-block 
       .container
         .head-block 
           h2 Наш Адрес
             p Ул. Московская, д. 1
             hr
-      .map-item
+      #map(style='width: 100%; height: 560px')
     .footer  
       .bg-footer-top 
         .container 

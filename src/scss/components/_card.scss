@@ -1,54 +1,76 @@
 .card-container {
     display: flex;
     justify-content: space-between;
-}
 
-.card-item {
-    height: 500px;
-    border-radius: 6px;
-    border: 1px solid #e3e3e3;
-
-    .media {
-
-
-        img {
-            width: 250px;
-            height: 250px;
-        }
+    @media #{$tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-    .desc {
+    @media #{$laptop} {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-        h3 {
-            font-size: 22px;
-            font-weight: 400;
-            max-width: 140px;
-            margin: 25px 0;
-            text-align: center;
-            height: 60px;
+
+
+    .card-item {
+        height: 500px;
+        border-radius: 6px;
+        border: 1px solid #e3e3e3;
+        margin: 20px;
+
+        @media #{$mobile} {
+            max-width: 100%;
         }
 
-        p {
-            font-size: 18px;
-            font-weight: bold;
-            color: #666;
+        .media {
+
+
+            img {
+                width: 100%;
+                max-width: 250px;
+                height: 250px;
+            }
+
+
         }
 
-        .btn {
-            border-radius: 4px;
-            border: 2px solid $softGreen;
-            background-color: $softGreen;
-            color: #fff;
-            padding: 10px 25px;
-            transition: 0.2s;
-        }
+        .desc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        .btn:hover {
-            background-color: rgb(0, 78, 8);
-            border: 2px solid rgb(0, 78, 8);
+            h3 {
+                font-size: 22px;
+                font-weight: 400;
+                max-width: 140px;
+                margin: 25px 0;
+                text-align: center;
+                height: 60px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: bold;
+                color: #666;
+            }
+
+            .btn {
+                border-radius: 4px;
+                border: 2px solid $softGreen;
+                background-color: $softGreen;
+                color: #fff;
+                padding: 10px 25px;
+                transition: 0.2s;
+            }
+
+            .btn:hover {
+                background-color: rgb(0, 78, 8);
+                border: 2px solid rgb(0, 78, 8);
+            }
         }
     }
 }

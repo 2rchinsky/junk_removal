@@ -3,8 +3,16 @@
     justify-content: space-between;
     align-items: center;
 
+    @media #{$tablet} {
+        flex-direction: column;
+    }
+
     .logo-deck {
         .logo {
+            @media #{$mobile} {
+                text-align: center;
+            }
+
             a {
                 font-size: 36px;
             }
@@ -15,6 +23,11 @@
         h2 {
             font-size: 22px;
             font-weight: normal;
+
+            @media #{$tablet} {
+                text-align: center;
+                display: none;
+            }
         }
     }
 
@@ -22,6 +35,21 @@
         display: flex;
         justify-content: space-between;
         width: 60%;
+
+        @media #{$tablet} {
+            display: none;
+        }
+
+        @media #{$laptop} {
+            justify-content: space-evenly;
+            width: 50%;
+        }
+
+        .he-block-tablet {
+            @media #{$laptop} {
+                display: none;
+            }
+        }
 
         .he-block {
             display: flex;
@@ -56,4 +84,8 @@
 .menu {
     height: 60px;
     background-color: $softGreen;
+
+    @media #{$mobile} {
+        display: none;
+    }
 }

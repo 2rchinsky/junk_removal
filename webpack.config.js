@@ -4,13 +4,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
-          template: "./index.pug",
-          favicon: "./favicon.ico",
-        },
-        {
-          template: './services.pug',
-          favicon: "./favicon.ico",
-        }),
+      template: "./index.pug",
+      favicon: "./favicon.ico",
+    },
+      {
+        template: './services.pug',
+        favicon: "./favicon.ico",
+      }),
     new MiniCssExtractPlugin(),
   ],
   module: {

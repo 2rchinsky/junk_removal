@@ -27,7 +27,7 @@
         }
     }
 
-    .block {
+    .promo-block {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 30px;
@@ -68,6 +68,7 @@
             p {
                 font-size: 18px;
                 line-height: 30px;
+                padding-bottom: 20px;
             }
 
             .btn {

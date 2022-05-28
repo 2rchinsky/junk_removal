@@ -1,0 +1,266 @@
+include pug/libs/_libs
+
+html(lang='en')
+    include pug/_head
+    body
+        .container
+            .header 
+                .logo-deck
+                    .logo
+                        a Название компании
+                    h2 Вывоз мусора
+                .he-deck 
+                    .he-block-tablet
+                        .he-block 
+                            .icon 
+                                i.fa.fa-clock-o(aria-hidden="true")
+                            .he-text Часы работы
+                                span Без выходных с 10 до 18
+                    .he-block 
+                        .icon
+                            i.fa.fa-phone(aria-hidden="true")
+                        .he-text Телефон
+                            span +7 (123) 100 10 10
+                    .he-block
+                        .icon
+                            i.fa.fa-map-marker(aria-hidden="true")
+                        .he-text Адрес
+                            span Ул. Московская, д. 1
+        nav.navbar  
+            .nav-container
+                ul.nav-links
+                    input#checkbox_toggle(type='checkbox')
+                    label.hamburger(for='checkbox_toggle')
+                        span.hamburger-line
+                    .menu
+                        li
+                            a(href='') Главная
+                        li
+                            a(href='') Отзывы
+                        li
+                            a(href='') Контакты
+                        li
+                            a(href='') О компании
+                        li
+                            a(href='') Услуги
+                        li
+                            a(href='') Акции
+        .banner
+            .container 
+                h1 Вывоз мусора
+                p Описание акции или другая дополнительная информация
+                a.btn(href="#") Подробнее
+        .container
+            .card-container 
+                .card-item 
+                    .media
+                        +image('Stroitelnyi')
+                    .desc
+                        h3 Вывоз строительного мусора
+                        p От 6000 руб.
+                        a.btn(href="#") Подробности
+                .card-item
+                    .media
+                        +image('kvartinryi')
+                    .desc
+                        h3 Вывоз мусора из квартиры
+                        p От 4000 руб.
+                        a.btn(href="#") Подробности
+                .card-item
+                    .media
+                        +image('bytovoyi')
+                    .desc
+                        h3 Вывоз бытового мусора 
+                        p От 2500 руб.
+                        a.btn(href="#") Подробности
+                .card-item
+                    .media
+                        +image('promysh')
+                    .desc
+                        h3 Вывоз промышленных отходов 
+                        p От 7000 руб.
+                        a.btn(href="#") Подробности 
+        .bggrey 
+            .container
+                .hand_p
+                    h2 Наши преимущества
+                        hr
+                .hand 
+                    .blok_icon 
+                        .icon
+                            i.fa.fa-handshake-o(aria-hidden="true") 
+                        h3 Чистота и аккуратность
+                        p Выполняем работу, максимально стараясь не оставлять после себя пыли, грязи.
+                    .blok_icon
+                        .icon
+                            i.fa.fa-handshake-o(aria-hidden="true") 
+                        h3 Экологичность
+                        p Весь вывезенный мусор мы доставляем в специально подготовленные места/утилизируем.
+                    .blok_icon
+                        .icon 
+                            i.fa.fa-handshake-o(aria-hidden="true") 
+                        h3 Демократичные цены
+                        p Справедливая стоимость услуг, постоянным клиентам - скидки и акции.
+                    .blok_icon 
+                        .icon
+                            i.fa.fa-handshake-o(aria-hidden="true") 
+                        h3 Оперативность
+                        p Приезжаем на место практически сразу и быстро выполняем работу.
+        .container 
+            .promo
+                .head 
+                    h2 Акции
+                    p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+                    hr
+                .promo-block 
+                    .block_item
+                        h3
+                            a(href="#") Вывоз на утилизацию
+                        p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+                        a.btn(href="#") Подробности
+                    .block_item
+                        h3
+                            a(href="#") 5 газелей по цене 4
+                        p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+                        a.btn(href="#") Подробности
+        .parallax 
+            .container 
+                .head-block
+                    h2 О нас в цифрах
+                        hr
+                .block-deck
+                    .block-item 
+                        span 10
+                        p Лет
+                    .block-item 
+                        span 500+
+                        p Клиентов
+                    .block-item
+                        span 100
+                        p  Проектов
+                    .block-item 
+                        span 5000
+                        p Чашек чая
+        .container 
+            .description
+                h2 О нас
+                p Текст о компании – это идеальная возможность для отстройки от конкурентов. Нужно оперировать фактами. Пусть их будет немного, но именно они будут демонстрировать уникальность вашей компании. <br>  Шаблон написания текста о компании: <br> чем занимаемся; что у нас получается лучше всего; примеры наших работ; в чём отличие компании; наша команда в лицах; наша компания в цифрах; что о нас говорят клиенты; какие гарантии мы даём.
+                a.btn(href="")  Подробнее
+        .bggrey
+            .container 
+                .bor-block 
+                    h3 Торопитесь, скидка 15% до конца месяца!
+                    p Скидка — сумма, на которую снижается продажная цена товара, реализуемого покупателю. Исторически скидки появились и стали использоваться в условиях уличной торговли товарами, когда продавец в результате торга предоставлял скидку тому покупателю, который приобретает больше товаров.
+                    a.btn(href="") Подробнее
+        .news 
+            .container 
+                h2 Новости
+                    hr
+                .media-block 
+                    .block_item 
+                        img(src="#", alt="")
+                        h3 
+                            a(href="") Hello World!
+                        span ?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa dolorem, numquam aliquam voluptatum mollitia reiciendis, consequatur ratione veniam, debitis rerum perspiciatis distinctio corrupti aliquid magni nemo optio accusantium temporibus!
+                        a.cont(href="") Читать далее...
+                        hr
+                    .block_item 
+                        img(src="#", alt="")
+                        h3
+                            a(href="") Hello World!
+                        span ?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa dolorem, numquam aliquam voluptatum mollitia reiciendis, consequatur ratione veniam, debitis rerum perspiciatis distinctio corrupti aliquid magni nemo optio accusantium temporibus!
+                        a.cont(href="") Читать далее...
+                        hr
+                    .block_item 
+                        img(src="#", alt="")
+                        h3
+                            a(href="") Hello World! 
+                        span ?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa dolorem, numquam aliquam voluptatum mollitia reiciendis, consequatur ratione veniam, debitis rerum perspiciatis distinctio corrupti aliquid magni nemo optio accusantium temporibus!
+                        a.cont(href="") Читать далее...
+                        hr
+        .bgwhite
+            .container 
+                .feedback 
+                    h2 Отзывы
+                        hr
+                .feed_block 
+                    .block_item 
+                        .block_image
+                            +image('chel1')
+                        .block_info 
+                            p Работаем с данной фирмой уже довольно давно. Никаких нареканий, одни положительные впечатления. Будем продолжать сотрудничество.
+                            span - Владимир
+                    .block_item 
+                        .block_image
+                            +image('chel2')
+                        .block_info 
+                            p Сайт понравился. Спасибо менеджерам за творческий подход! Буду рекомендовать всем друзьям и близким.
+                            span - Вячеслав
+                    .block_item 
+                        .block_image
+                            +image('chel3')
+                        .block_info 
+                            p Сайт просто супер. Ребята молодцы, делают свою работу на высоком уровне. Товары всегда новые, цены вполне доступные. Часто проводятся скидки, акции, что особо радует :) 
+                            span - Алексей
+        .bggrey
+            .container 
+                .head-block-glider
+                    h2 Наши партнеры
+                        hr
+                .glider-contain
+                    .glider
+                        div 
+                            +image('obi')
+                        div 
+                            +image('ikea')
+                        div 
+                            +image('leroy')
+                        div 
+                            +image('zver')
+                        div 
+                            +image('trakr')
+                        div 
+                            +image('Ashan')
+                    <div role="tablist" class="dots"></div>
+        .parallax-sec  
+            .container 
+                .head-block   
+                    h2 Вопросы?
+                        p Отправьте заявку и мы с вами свяжемся 
+                        hr.sec
+                .forms 
+                    form(action="#")
+                        .forms-block
+                            input(type="text" name="name" placeholder="Имя")
+                            input(type="tel" name="phone" placeholder="Телефон")
+                            input(type="text" name="mail" placeholder="Email")
+                        textarea(name="message" rows="11" placeholder="Сообщение") 
+                        .btn-send
+                            button Отправить
+                        p Отправляя данную форму, вы соглашаетесь c Политикой конфиденциальности
+        .map-block 
+            .container
+                .head-block 
+                    h2 Наш Адрес
+                        p Ул. Московская, д. 1
+                        hr
+            #map(style='width: 100%; height: 560px')
+        .footer  
+            .bg-footer-top 
+                .container 
+                    .footer-items 
+                        .foot-item 
+                            span Звоните:
+                            span +7 (123) 100 10 10
+                        .foot-item 
+                            span E-mail
+                            span company-mail@gmail.com
+                    .foot-icons 
+                        span Lorem ipsum dolor sit amet.
+            .bg-footer-bottom
+                .container
+                    h3 Название комании © 2022
+                    p All rights reserved

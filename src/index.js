@@ -1,6 +1,23 @@
-import "./scss/main.scss";
+import './styles/index.scss'
+import $ from "jquery";
+// import 'bootstrap';
+
+const userStack = {
+    language: 'JavaScript',
+    framework: 'None'
+}
+
+const user = {
+    name: 'Denis',
+    age: '19',
+    ...userStack
+}
+
+$('.block').html('jQuery is working');
+
+console.log(user)
 new Glider(document.querySelector('.glider'), {
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     draggable: true,
     dots: '.dots',

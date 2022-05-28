@@ -20,6 +20,7 @@ $accordionBodyTextColor: $darkGrayishBlue;
 $dividersColor: $lightGrayishBlue;
 
 // BREAKPOINTS
-$mobile: "screen and (max-width: 768px)";
+$mobile-menu: "screen and (min-width: 767px)";
+$mobile: "screen and (max-width: 767px)";
 $tablet: "screen and (max-width: 991px)";
 $laptop: "screen and (max-width: 1219px)";

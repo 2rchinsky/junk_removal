@@ -80,12 +80,3 @@
         }
     }
 }
-
-.menu {
-    height: 60px;
-    background-color: $softGreen;
-
-    @media #{$mobile} {
-        display: none;
-    }
-}

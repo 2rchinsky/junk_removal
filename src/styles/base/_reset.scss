@@ -1,12 +1,8 @@
-*,
-*:after,
-*:before {
-  //outline: 1px red dashed;
+* {
+  list-style-type: none;
   box-sizing: border-box;
-}
-
-html {
-  min-height: 100vh;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 body {

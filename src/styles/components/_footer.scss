@@ -15,7 +15,7 @@
         }
 
         .footer-items {
-            max-width: 45%;
+            max-width: 65%;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -25,19 +25,27 @@
             }
 
             @media #{$tablet} {
-                max-width: 50%;
+                //max-width: 50%;
             }
 
             @media #{$laptop} {
-                max-width: 50%;
+                max-width: 70%;
+            }
+
+            .foot-item {
+                .footer-text {
+                    font-size: 14px;
+                    display: block;
+                    color: #f5f5f5a2;
+                    line-height: 150%;
+                }
             }
         }
 
-        span {
-            display: block;
-            color: #888;
-            font-size: 20px;
-            line-height: 35px;
+        .foot-icons {
+            width: 15%;
+            display: flex;
+            justify-content: space-evenly;
         }
     }
 }

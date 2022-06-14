@@ -1,0 +1,93 @@
+.form {
+    max-width: 750px;
+    margin: 0 auto;
+
+    * {
+        outline: none;
+    }
+
+    .form_body {
+        .form_input {
+            font-size: 16px;
+            color: white;
+            background-color: #222;
+            border: 2px solid #131313;
+            border-radius: 4px;
+            transition: all .5s;
+        }
+
+        .form_input:focus {
+            box-shadow: 0 0 15px green;
+        }
+
+        .form_input._error {
+            box-shadow: 0 0 15px red;
+        }
+
+        .ipnut_block {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0;
+
+            @media #{$mobile} {
+                flex-direction: column;
+            }
+
+            .form_input {
+                height: 40px;
+                padding: 0 5px;
+
+                @media #{$mobile} {
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        textarea.form_input {
+            min-height: 120px;
+            width: 100%;
+            resize: none;
+            padding: 10px;
+        }
+
+        .form_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+
+            button {
+                padding: 10px 25px;
+                font-size: 18px;
+                background-color: $softGreen;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                border-bottom: 2px solid rgb(5, 63, 24);
+                cursor: pointer;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: rgb(0, 78, 8);
+                }
+            }
+        }
+
+        .form_text {
+            text-align: center;
+            font-size: 16px;
+            color: white;
+
+            .privacy {
+                color: rgb(1, 184, 1);
+                font-size: 18px;
+                transition: all .3s;
+
+                &:hover {
+                    color: green;
+                }
+            }
+        }
+    }
+}

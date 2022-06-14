@@ -13,7 +13,15 @@
   }
 
   @media #{$mobile} {
-    max-width: 80%;
+    max-width: 100%;
+  }
+}
+
+.container-max {
+  @extend .container;
+
+  @media #{$tablet} {
+    max-width: 100%;
   }
 }
 

@@ -1,0 +1,158 @@
+include pug/libs/_libs
+head 
+    title Прайс-лист
+
+html(lang='en')
+    include pug/_head
+    body
+        .container
+            .header 
+                .logo-deck
+                    .logo
+                        a УТИЛЬ-ПРОФ
+                    h2 Вывоз мусора
+                .he-deck 
+                    .he-block-tablet
+                        .he-block 
+                            .icon 
+                                i.fa.fa-clock-o(aria-hidden="true")
+                            .he-text Часы работы
+                                span Без выходных с 10 до 18
+                    .he-block 
+                        .icon
+                            i.fa.fa-phone(aria-hidden="true")
+                        .he-text Телефон
+                            span +7 (123) 100 10 10
+                    .he-block
+                        .icon
+                            i.fa.fa-map-marker(aria-hidden="true")
+                        .he-text Адрес
+                            span Ул. Московская, д. 1
+        nav.navbar  
+            .nav-container
+                ul.nav-links
+                    input#checkbox_toggle(type='checkbox')
+                    label.hamburger(for='checkbox_toggle')
+                        span.hamburger-line
+                    .menu
+                        li
+                            a(href='/index.html') Главная
+                        li
+                            a(href='/feedback.html') Отзывы
+                        li
+                            a(href='/contacts.html') Контакты
+                        li
+                            a(href='/pricelist.html') Прайс-лист
+                        li
+                            a(href='/services.html') Услуги
+                        li
+                            a(href='/promo.html') Акции
+            .logo-burger 
+                h2 
+                    a(href='/index.html') Вывоз мусора
+        .banner-second
+            .container 
+                h1 Вывоз мусора
+                a.btn.open_popup(href="#") Подробнее
+        .popup_bg 
+            form.popup(action="#")
+                .popup_header 
+                    .close_popup 
+                        i.fa.fa-times(aria-hidden="true")
+                    p Мы с вами свяжемся
+                label(for="#") 
+                    input(type="text" name="name")
+                    .label_text Ваше имя
+                label(for="#") 
+                    input(type="tel" name="phone")
+                    .label_text Ваш телефон
+                label(for="#") 
+                    textarea(name="message") 
+                    .label_text Ваше cообщение
+                button(type="submit") Отправить
+        .container 
+            .second-nav 
+                a(href='/index.html') Главная
+                span /
+                a(href="") Прайс-лист
+            .hand_p
+                h2 Прайс-лист
+                    hr
+            .sec-text 
+                p В этом блоке рекомендуется разместить прайс-лист на предлагаемые компанией услуги.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perspiciatis odit dolore. Alias vitae culpa quas unde totam nesciunt minus quisquam modi? Facere, excepturi voluptate exercitationem dolores sit quaerat ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam perspiciatis quae omnis! Numquam perspiciatis laudantium culpa reiciendis repudiandae maxime, quis minima nulla ipsum quibusdam pariatur aperiam mollitia a illum.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid numquam, molestias dolorem perspiciatis corrupti quibusdam, quam sequi voluptate consectetur rerum praesentium eaque voluptatibus repudiandae unde a velit earum sint.
+                p Заголовок таблицы
+                table 
+                    tr.bold 
+                        th №
+                        th Наименование товара
+                        th Цена (руб.)
+                        th Цена от 5 шт. (руб.)
+                    tr 
+                        td 1
+                        td Товар/Услуга 1
+                        td 80
+                        td 70
+                    tr  
+                        td 2
+                        td Товар/Услуга 2
+                        td 80
+                        td 70
+                    tr 
+                        td 3
+                        td Товар/Услуга 3
+                        td 80
+                        td 70
+        .parallax-sec  
+            .container 
+                .head-block   
+                    h2 Вопросы?
+                        p Отправьте заявку и мы с вами свяжемся 
+                        hr.sec
+                .form 
+                    form.form_body(action="#" id="form")
+                        .ipnut_block
+                            .form_item
+                                input.form_input._req(type="text" name="name" placeholder="Ваше имя")
+                            .form_item
+                                input.form_input._req._email(type="text" name="email" placeholder="Ваш E-mail")
+                            .form_item
+                                input.form_input._req(type="tel" name="phone" placeholder="Ваш телефон")
+                        .form_item 
+                            textarea.form_input(name="message" placeholder="Сообщение") 
+                        .form_button
+                            button(type="submit") Отправить
+                        p.form_text Отправляя данную форму, вы соглашаетесь c 
+                            a(href='/privacy.html').form_text.privacy Политикой конфиденциальности.
+        .map-block 
+            .container
+                .head-block 
+                    h2 Наш Адрес
+                        p Ул. Московская, д. 1
+                        hr
+            #map(style='width: 100%; height: 560px')
+        .footer  
+            .bg-footer-top 
+                .container 
+                    .footer-items 
+                        .foot-item 
+                            span.footer-text Звоните:
+                            span.footer-text +7 (123) 100 10 10
+                        .foot-item 
+                            span.footer-text Адрес
+                            span.footer-text Ул. Московская, д. 1
+                        .foot-item 
+                            span.footer-text Часы работы
+                            span.footer-text Без выходных с 10 до 18
+                    .foot-icons 
+                        .viber
+                            a(href="") 
+                                +image('viber')
+                        .whatsapp 
+                            a(href="")
+                                +image('whatsapp')
+            .bg-footer-bottom
+                .container
+                    h3 УТИЛЬ-ПРОФ © 2022
+                    p All rights reserved

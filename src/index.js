@@ -2,30 +2,6 @@ import './styles/index.scss'
 import $ from "jquery";
 // import 'bootstrap';
 
-const userStack = {
-    language: 'JavaScript',
-    framework: 'None'
-}
-
-const user = {
-    name: 'Denis',
-    age: '19',
-    ...userStack
-}
-
-$('.block').html('jQuery is working');
-
-console.log(user)
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    draggable: true,
-    dots: '.dots',
-    arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-    }
-});
 ymaps.ready(init);
 function init() {
     // Создание карты.
@@ -94,5 +70,33 @@ function init() {
             preset: 'islands#icon',
             iconColor: '#0095b6'
         }));
+    myMap.behaviors
+        .disable('scrollZoom')
+        .disable('drag')
 
 }
+
+const userStack = {
+    language: 'JavaScript',
+    framework: 'None'
+}
+
+const user = {
+    name: 'Denis',
+    age: '19',
+    ...userStack
+}
+
+$('.block').html('jQuery is working');
+
+console.log(user)
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: '.dots',
+    arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+    }
+});

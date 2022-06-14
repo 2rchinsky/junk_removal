@@ -1,0 +1,59 @@
+.second-nav {
+    display: flex;
+    margin-bottom: 30px;
+
+    span {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    a {
+        display: block;
+        font-size: 20px;
+        color: $softGreen;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.fb {
+    background-color: $softGreen;
+}
+
+.hand_p {
+    h2 {
+        text-align: left;
+
+        hr {
+            margin: 20px 0 25px;
+        }
+    }
+
+}
+
+.sec-text {
+    h3 {
+        font-size: 20px;
+    }
+
+    ul {
+        li {
+            list-style-type: circle;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+table {
+    border: 2px;
+
+    tr {
+        padding: 30px;
+    }
+}

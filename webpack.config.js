@@ -37,7 +37,29 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./src/index.pug"
-        })],
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/services.pug",
+            filename: "services.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/feedback.pug",
+            filename: "feedback.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/contacts.pug",
+            filename: "contacts.html"
+        }), new HtmlWebpackPlugin({
+            template: "src/pricelist.pug",
+            filename: "pricelist.html"
+        }), new HtmlWebpackPlugin({
+            template: "src/promo.pug",
+            filename: "promo.html"
+        }), new HtmlWebpackPlugin({
+            template: "src/privacy.pug",
+            filename: "privacy.html"
+        }),
+    ],
     module: {
         rules: [
             {

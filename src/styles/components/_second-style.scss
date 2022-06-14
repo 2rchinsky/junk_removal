@@ -33,7 +33,7 @@
 
 }
 
-.sec-text {
+.contacts {
     h3 {
         font-size: 20px;
     }
@@ -47,6 +47,58 @@
     p {
         font-size: 18px;
         line-height: 32px;
+    }
+
+    a {
+        display: block;
+        position: relative;
+    }
+
+    .viber::before {
+
+        content: "";
+        position: absolute;
+        // left: -40px;
+        top: 5px;
+        // display: block;
+        width: 26px;
+        height: 26px;
+        background: url(/src/images/viber.png);
+        background-size: cover;
+        cursor: pointer;
+
+    }
+
+    .whatsapp::before {
+        content: "";
+        position: absolute;
+        // left: -40px;
+        top: 5px;
+        // display: block;
+        width: 27px;
+        height: 26px;
+        background: url(/src/images/whatsapp.png);
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .telegram::before {
+        content: "";
+        position: absolute;
+        // left: -40px;
+        top: 5px;
+        // display: block;
+        width: 26px;
+        height: 26px;
+        background: url(/src/images/telegram.png);
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .icon_text {
+        position: relative;
+        left: 30px;
+        top: 2px;
     }
 }
 

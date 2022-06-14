@@ -1,6 +1,6 @@
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.679),
-            rgba(0, 0, 0, 0.679)), url(/src/images/GazelG.png);
+            rgba(0, 0, 0, 0.679)), url(/src/images/baw.png);
     height: 550px;
     display: block;
     background-size: cover;
@@ -26,6 +26,7 @@
 
             @media #{$mobile} {
                 text-align: center;
+                font-size: 44px;
             }
         }
 

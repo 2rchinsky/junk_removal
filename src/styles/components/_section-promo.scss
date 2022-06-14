@@ -35,43 +35,56 @@
             flex-direction: column;
         }
 
-        @media #{$tablet} {
-            flex-direction: column;
-        }
+        // @media #{$tablet} {
+        //     flex-direction: column;
+        // }
 
         .promo-item {
-            display: flex;
+            // display: flex;
+            max-width: 35%;
             margin-bottom: 20px;
+
+            @media #{$laptop} {
+                max-width: 45%;
+            }
 
             @media #{$mobile} {
                 flex-direction: column;
+                max-width: 100%;
             }
         }
 
-        img {
-            max-width: 100%;
-            padding: 0 10px;
+        .promo-media {
+            display: flex;
+            justify-content: center;
 
-            @media #{$tablet} {
+            img {
                 max-width: 80%;
+
+
+                @media #{$laptop} {
+                    max-width: 80%;
+                }
             }
+
         }
 
 
         .block_item {
             flex-direction: column;
-            max-width: 50%;
-            text-align: left;
+            max-width: 100%;
+            text-align: center;
 
             //border: 2px solid red;
-            @media #{$tablet} {
-                max-width: 40%;
-            }
+            // @media #{$tablet} {
+            //     max-width: 40%;
+            // }
 
             @media #{$mobile} {
-                max-width: 100%;
+                max-width: 400px;
                 margin-bottom: 20px;
                 margin-top: 20px;
+                margin: 20px auto;
             }
 
             h3 {
@@ -80,11 +93,13 @@
                     font-weight: 600;
                     color: $softGreen;
 
-                    &:hover {
-                        color: #000;
-                    }
+                    // &:hover {
+                    //     color: $softGreen;
+                    // }
                 }
 
+                min-height: 80px;
+                margin-top: 15px;
 
             }
 
@@ -102,7 +117,6 @@
                 color: #fff;
                 padding: 10px 25px;
                 transition: 0.2s;
-                display: block;
                 // width: auto;
 
                 // @media #{$tablet} {

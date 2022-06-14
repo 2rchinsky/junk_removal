@@ -63,10 +63,21 @@ html(lang='en')
             .hand_p
                 h2 Контакты
                     hr
-            .sec-text
+            .contacts
                 h3 Телефон
-                p +7 (123) 100 10 10
-                h3 Звоните
+                p +7 (911) 140 06 20
+                a(href="https://viber.click/79111400620")
+                    .viber
+                        p.icon_text +7 (911) 140 06 20
+                a(href="https://wa.me/79111400620?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B")
+                    .whatsapp 
+                        p.icon_text +7 (911) 140 06 20
+                a(href="https://t.me/+79111400620")
+                    .telegram
+                        p.icon_text +7 (911) 140 06 20
+                h3 E-mail
+                p util-prof@mail.ru
+                h3 Работаем
                 p Без выходных с 9:00 до 19:00 
                 h3 Адрес
                 p 123123, Россия, г. Санкт-Петербург, ул. Московская, д. 1
@@ -113,13 +124,13 @@ html(lang='en')
                         .foot-item 
                             span.footer-text Часы работы
                             span.footer-text Без выходных с 10 до 18
-                    .foot-icons 
-                        .viber
-                            a(href="") 
-                                +image('viber')
-                        .whatsapp 
-                            a(href="")
-                                +image('whatsapp')
+                    .foot-icons
+                        a(href="") 
+                            img(src="/images/viber.png")
+                        a(href="")
+                            img(src="/images/whatsapp.svg")
+                        a(href="")
+                            img(src="/images/telegram.svg") 
             .bg-footer-bottom
                 .container
                     h3 УТИЛЬ-ПРОФ © 2022

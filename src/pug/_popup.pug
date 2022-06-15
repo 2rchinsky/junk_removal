@@ -1,0 +1,16 @@
+.popup_bg
+    form.popup(action="#" id="form")
+        .popup_header
+            .close_popup
+                i.fa.fa-times(aria-hidden="true")
+            p Мы с вами свяжемся
+        label(for="#")
+            input(type="text" name="name")
+            .label_text Ваше имя
+        label(for="#")
+            input(type="tel" name="phone")
+            .label_text Ваш телефон
+        label(for="#")
+            textarea(name="message")
+            .label_text Ваше cообщение
+        button(type="submit") Отправить

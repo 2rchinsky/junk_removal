@@ -3,52 +3,8 @@ include pug/libs/_libs
 html(lang='en')
     include pug/_head
     body
-        .container
-            .header 
-                .logo-deck
-                    .logo
-                        img(src="/images/logo.png", alt="")
-                        a УТИЛЬ-ПРОФ
-                    h2 Вывоз мусора
-                .he-deck 
-                    .he-block-tablet
-                        .he-block 
-                            .icon 
-                                i.fa.fa-clock-o(aria-hidden="true")
-                            .he-text Часы работы
-                                span Без выходных с 10 до 18
-                    .he-block 
-                        .icon
-                            i.fa.fa-phone(aria-hidden="true")
-                        .he-text Телефон
-                            span +7 (911) 140 06 20
-                    .he-block
-                        .icon
-                            i.fa.fa-map-marker(aria-hidden="true")
-                        .he-text Адрес
-                            span Ул. Московская, д. 1
-        nav.navbar  
-            .nav-container
-                ul.nav-links
-                    input#checkbox_toggle(type='checkbox')
-                    label.hamburger(for='checkbox_toggle')
-                        span.hamburger-line
-                    .menu
-                        li
-                            a(href='') Главная
-                        li
-                            a(href='/feedback.html') Отзывы
-                        li
-                            a(href='/contacts.html') Контакты
-                        li
-                            a(href='/pricelist.html') Прайс-лист
-                        li
-                            a(href='/services.html') Услуги
-                        li
-                            a(href='/promo.html') Акции
-            .logo-burger 
-                h2 
-                    a(href='/index.html') Вывоз мусора
+        include pug/_header
+        include pug/_nav
         .banner
             .container 
                 h1 Сделаем город чище!
@@ -181,16 +137,16 @@ html(lang='en')
                 .block-deck
                     .block-item 
                         span 10
-                        p Лет
+                        p Лет работы
                     .block-item 
-                        span 500+
-                        p Клиентов
+                        span 5000+
+                        p Довольных клиентов
                     .block-item
-                        span 100
-                        p  Проектов
+                        span 300+
+                        p  Крупных проектов
                     .block-item 
-                        span 5000
-                        p Чашек чая
+                        span 400+
+                        p Постоянных клиентов
         .container 
             .description
                 h2 О нас
@@ -273,71 +229,7 @@ html(lang='en')
                         div 
                             img(src="/images/petrovich.png")
                     <div role="tablist" class="dots"></div>
-        .parallax-sec  
-            .container 
-                .head-block   
-                    h2 Вопросы?
-                        p Отправьте заявку и мы с вами свяжемся 
-                        hr.sec
-                .form 
-                    form.form_body(action="#" id="form")
-                        .ipnut_block
-                            .form_item
-                                input.form_input._req(type="text" name="name" placeholder="Ваше имя")
-                            .form_item
-                                input.form_input._req._email(type="text" name="email" placeholder="Ваш E-mail")
-                            .form_item
-                                input.form_input._req(type="tel" name="phone" placeholder="Ваш телефон")
-                        .form_item 
-                            textarea.form_input(name="message" placeholder="Сообщение") 
-                        .form_button
-                            button(type="submit") Отправить
-                        p.form_text Отправляя данную форму, вы соглашаетесь c 
-                            a(href='/privacy.html').form_text.privacy Политикой конфиденциальности.
-        .map-block 
-            .container
-                .head-block 
-                    h2 Наш Адрес
-                        p Ул. Московская, д. 1
-                        hr
-            #map(style='width: 100%; height: 560px')
-        .footer  
-            .bg-footer-top 
-                .container 
-                    .footer-items 
-                        .foot-item.tel 
-                            span.footer-text Звоните
-                            span.footer-text +7 (911) 140 06 20
-                        .foot-item.mail
-                            span.footer-text E-mail
-                            span.footer-text util-prof@mail.ru
-                        .foot-item.time
-                            span.footer-text Часы работы
-                            span.footer-text Без выходных с 10 до 18
-                    .foot-icons
-                        a(href="") 
-                            img(src="/images/viber.png")
-                        a(href="")
-                            img(src="/images/whatsapp.svg")
-                        a(href="")
-                            img(src="/images/telegram.svg") 
-            .bg-footer-bottom
-                .container
-                    h3 УТИЛЬ-ПРОФ © 2022
-                    p All rights reserved.
-        .popup_bg 
-            form.popup(action="#" id="form")
-                .popup_header 
-                    .close_popup 
-                        i.fa.fa-times(aria-hidden="true")
-                    p Мы с вами свяжемся
-                label(for="#") 
-                    input(type="text" name="name")
-                    .label_text Ваше имя
-                label(for="#") 
-                    input(type="tel" name="phone")
-                    .label_text Ваш телефон
-                label(for="#") 
-                    textarea(name="message") 
-                    .label_text Ваше cообщение
-                button(type="submit") Отправить
+        include pug/_form
+        include pug/_map
+        include pug/_footer
+        include pug/_popup

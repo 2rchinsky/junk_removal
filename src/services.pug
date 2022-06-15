@@ -5,67 +5,8 @@ head
 html(lang='en')
     include pug/_head
     body
-        .container
-            .header 
-                .logo-deck
-                    .logo
-                        a УТИЛЬ-ПРОФ
-                    h2 Вывоз мусора
-                .he-deck 
-                    .he-block-tablet
-                        .he-block 
-                            .icon 
-                                i.fa.fa-clock-o(aria-hidden="true")
-                            .he-text Часы работы
-                                span Без выходных с 10 до 18
-                    .he-block 
-                        .icon
-                            i.fa.fa-phone(aria-hidden="true")
-                        .he-text Телефон
-                            span +7 (123) 100 10 10
-                    .he-block
-                        .icon
-                            i.fa.fa-map-marker(aria-hidden="true")
-                        .he-text Адрес
-                            span Ул. Московская, д. 1
-        nav.navbar  
-            .nav-container
-                ul.nav-links
-                    input#checkbox_toggle(type='checkbox')
-                    label.hamburger(for='checkbox_toggle')
-                        span.hamburger-line
-                    .menu
-                        li
-                            a(href='/index.html') Главная
-                        li
-                            a(href='/feedback.html') Отзывы
-                        li
-                            a(href='/contacts.html') Контакты
-                        li
-                            a(href='/pricelist.html') Прайс-лист
-                        li
-                            a(href='/services.html') Услуги
-                        li
-                            a(href='/promo.html') Акции
-            .logo-burger 
-                h2 
-                    a(href='/index.html') Вывоз мусора
-        .popup_bg 
-            form.popup(action="#")
-                .popup_header 
-                    .close_popup 
-                        i.fa.fa-times(aria-hidden="true")
-                    p Мы с вами свяжемся
-                label(for="#") 
-                    input(type="text" name="name")
-                    .label_text Ваше имя
-                label(for="#") 
-                    input(type="tel" name="phone")
-                    .label_text Ваш телефон
-                label(for="#") 
-                    textarea(name="message") 
-                    .label_text Ваше cообщение
-                button(type="submit") Отправить
+        include pug/_header
+        include pug/_nav
         .banner-second
             .container 
                 h1 Вывоз мусора
@@ -81,55 +22,7 @@ html(lang='en')
             .sec-text 
                 p Не следует, однако, забывать, что существующая теория влечет за собой процесс внедрения и модернизации системы массового участия. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. В целом, конечно, современная методология разработки представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов. Как принято считать, активно развивающиеся страны третьего мира неоднозначны и будут указаны как претенденты на роль ключевых факторов. И нет сомнений, что элементы политического процесса призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности
                 p Не следует, однако, забывать, что существующая теория влечет за собой процесс внедрения и модернизации системы массового участия. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. В целом, конечно, современная методология разработки представляет собой интересный эксперимент проверки распределения внутренних резервов и ресурсов. Как принято считать, активно развивающиеся страны третьего мира неоднозначны и будут указаны как претенденты на роль ключевых факторов. И нет сомнений, что элементы политического процесса призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности
-        .parallax-sec  
-            .container 
-                .head-block   
-                    h2 Вопросы?
-                        p Отправьте заявку и мы с вами свяжемся 
-                        hr.sec
-                .form 
-                    form.form_body(action="#" id="form")
-                        .ipnut_block
-                            .form_item
-                                input.form_input._req(type="text" name="name" placeholder="Ваше имя")
-                            .form_item
-                                input.form_input._req._email(type="text" name="email" placeholder="Ваш E-mail")
-                            .form_item
-                                input.form_input._req(type="tel" name="phone" placeholder="Ваш телефон")
-                        .form_item 
-                            textarea.form_input(name="message" placeholder="Сообщение") 
-                        .form_button
-                            button(type="submit") Отправить
-                        p.form_text Отправляя данную форму, вы соглашаетесь c 
-                            a(href='/privacy.html').form_text.privacy Политикой конфиденциальности.
-        .map-block 
-            .container
-                .head-block 
-                    h2 Наш Адрес
-                        p Ул. Московская, д. 1
-                        hr
-            #map(style='width: 100%; height: 560px')
-        .footer  
-            .bg-footer-top 
-                .container 
-                    .footer-items 
-                        .foot-item 
-                            span.footer-text Звоните:
-                            span.footer-text +7 (123) 100 10 10
-                        .foot-item 
-                            span.footer-text Адрес
-                            span.footer-text Ул. Московская, д. 1
-                        .foot-item 
-                            span.footer-text Часы работы
-                            span.footer-text Без выходных с 10 до 18
-                    .foot-icons 
-                        .viber
-                            a(href="") 
-                                +image('viber')
-                        .whatsapp 
-                            a(href="")
-                                +image('whatsapp')
-            .bg-footer-bottom
-                .container
-                    h3 УТИЛЬ-ПРОФ © 2022
-                    p All rights reserved
+        include pug/_form
+        include pug/_map
+        include pug/_footer
+        include pug/_popup

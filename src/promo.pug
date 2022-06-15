@@ -5,141 +5,38 @@ head
 html(lang='en')
     include pug/_head
     body
-        .container
-            .header 
-                .logo-deck
-                    .logo
-                        a УТИЛЬ-ПРОФ
-                    h2 Вывоз мусора
-                .he-deck 
-                    .he-block-tablet
-                        .he-block 
-                            .icon 
-                                i.fa.fa-clock-o(aria-hidden="true")
-                            .he-text Часы работы
-                                span Без выходных с 10 до 18
-                    .he-block 
-                        .icon
-                            i.fa.fa-phone(aria-hidden="true")
-                        .he-text Телефон
-                            span +7 (123) 100 10 10
-                    .he-block
-                        .icon
-                            i.fa.fa-map-marker(aria-hidden="true")
-                        .he-text Адрес
-                            span Ул. Московская, д. 1
-        nav.navbar  
-            .nav-container
-                ul.nav-links
-                    input#checkbox_toggle(type='checkbox')
-                    label.hamburger(for='checkbox_toggle')
-                        span.hamburger-line
-                    .menu
-                        li
-                            a(href='/index.html') Главная
-                        li
-                            a(href='/feedback.html') Отзывы
-                        li
-                            a(href='/contacts.html') Контакты
-                        li
-                            a(href='/pricelist.html') Прайс-лист
-                        li
-                            a(href='/services.html') Услуги
-                        li
-                            a(href='/promo.html') Акции
-            .logo-burger 
-                h2 
-                    a(href='/index.html') Вывоз мусора
+        include pug/_header
+        include pug/_nav
         .banner-second
             .container 
                 h1 Вывоз мусора
                 a.btn.open_popup(href="#") Подробнее
-        .container 
-            .second-nav 
+        .container
+            .second-nav
                 a(href='/index.html') Главная
                 span /
                 a(href="") Акции
             .hand_p
                 h2 Акции
                     hr
-            .sec-text
-                p В этом блоке рекомендуется разместить информацию о акциях комании 
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequatur pariatur doloribus earum iste rem eum enim harum delectus voluptatem eos ratione quo. Consectetur, eius voluptate quibusdam cum odio nesciunt.
-                h3 Пример заполнения блока 
-                p В нашем магазине действуют различные гибкие скидки и акции. О появлении новых акций Вы всегда можете узнать из раздела “Статьи”. Следите за обновлениями, чтобы всегда быть в курсе последних выгодных предложений.
-                p На данный момент у нас действуют следующие виды скидок:
-                ul 
-                    li 
-                        p Накопительная карта. При первой покупке Вы получите накопительную карту, на которую при каждом последующем приобретении будут зачисляться небольшие проценты от цены каждого купленного товара. Вы можете в любой момент использовать накопившуюся на карте сумму, чтобы оплатить покупку.
-                    li 
-                        p Акция “2 по цене 1”. Обращайте внимание на ценники. Оранжевым цветом (на сайте такие товары выделены иконкой “2=1”) выделены те товары, при покупке которых Вы получите второй экземпляр в подарок.
-                    li 
-                        p Также на товары с красными ценниками (на сайте такие товары выделены маркером “Спецпредложение”) действует скидка 10%. Будьте внимательны при выборе.
-        .parallax-sec  
-            .container 
-                .head-block   
-                    h2 Вопросы?
-                        p Отправьте заявку и мы с вами свяжемся 
-                        hr.sec
-                .form 
-                    form.form_body(action="#" id="form")
-                        .ipnut_block
-                            .form_item
-                                input.form_input._req(type="text" name="name" placeholder="Ваше имя")
-                            .form_item
-                                input.form_input._req._email(type="text" name="email" placeholder="Ваш E-mail")
-                            .form_item
-                                input.form_input._req(type="tel" name="phone" placeholder="Ваш телефон")
-                        .form_item 
-                            textarea.form_input(name="message" placeholder="Сообщение") 
-                        .form_button
-                            button(type="submit") Отправить
-                        p.form_text Отправляя данную форму, вы соглашаетесь c 
-                            a(href='/privacy.html').form_text.privacy Политикой конфиденциальности.
-        .map-block 
-            .container
-                .head-block 
-                    h2 Наш Адрес
-                        p Ул. Московская, д. 1
-                        hr
-            #map(style='width: 100%; height: 560px')
-        .footer  
-            .bg-footer-top 
-                .container 
-                    .footer-items 
-                        .foot-item 
-                            span.footer-text Звоните:
-                            span.footer-text +7 (123) 100 10 10
-                        .foot-item 
-                            span.footer-text Адрес
-                            span.footer-text Ул. Московская, д. 1
-                        .foot-item 
-                            span.footer-text Часы работы
-                            span.footer-text Без выходных с 10 до 18
-                    .foot-icons 
-                        .viber
-                            a(href="") 
-                                +image('viber')
-                        .whatsapp 
-                            a(href="")
-                                +image('whatsapp')
-            .bg-footer-bottom
-                .container
-                    h3 УТИЛЬ-ПРОФ © 2022
-                    p All rights reserved
-        .popup_bg 
-            form.popup(action="#")
-                .popup_header 
-                    .close_popup 
-                        i.fa.fa-times(aria-hidden="true")
-                    p Мы с вами свяжемся
-                label(for="#") 
-                    input(type="text" name="name")
-                    .label_text Ваше имя
-                label(for="#") 
-                    input(type="tel" name="phone")
-                    .label_text Ваш телефон
-                label(for="#") 
-                    textarea(name="message") 
-                    .label_text Ваше cообщение
-                button(type="submit") Отправить
+            .promo-block
+                .promo-item
+                    .promo-media
+                        img(src="/images/placeholder.png")
+                    .block_item
+                        h3
+                            a(href="/pricelist.html") Скидки 10% клиентам пенсионерам
+                        //- p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+                        a.btn.open_popup(href="#") Подробнее
+                .promo-item
+                    .promo-media
+                        img(src="/images/placeholder.png")
+                    .block_item
+                        h3
+                            a(href="/pricelist.html") Скидки 10% постоянным заказчикам
+                        //- p Основным направлением деятельности компании является оказание услуг в сфере … (Укажите направление деятельности Вашей компании). Все работы осуществляются командой профессионалов, имеющих многолетний опыт
+                        a.btn.open_popup(href="#") Подробнее
+        include pug/_form
+        include pug/_map
+        include pug/_footer
+        include pug/_popup

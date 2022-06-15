@@ -15,7 +15,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        assetModuleFilename: "assets/[hash][ext][query]",
+        assetModuleFilename: "images/[name][ext][query]",
         clean: true,
     },
     devServer: {

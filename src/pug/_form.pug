@@ -1,0 +1,21 @@
+.parallax-sec
+    .container
+        .head-block
+            h2 Вопросы?
+                p Отправьте заявку и мы с вами свяжемся
+                hr.sec
+        .form
+            form.form_body(action="#" id="form")
+                .ipnut_block
+                    .form_item
+                        input.form_input._req(type="text" name="name" placeholder="Ваше имя")
+                    .form_item
+                        input.form_input._req._email(type="text" name="email" placeholder="Ваш E-mail")
+                    .form_item
+                        input.form_input._req(type="tel" name="phone" placeholder="Ваш телефон")
+                .form_item
+                    textarea.form_input(name="message" placeholder="Сообщение")
+                .form_button
+                    button(type="submit") Отправить
+                p.form_text Отправляя данную форму, вы соглашаетесь c
+                    a(href='/privacy.html').form_text.privacy Политикой конфиденциальности.

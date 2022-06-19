@@ -1,5 +1,9 @@
 .bg-footer-top {
     background-color: rgb(50, 50, 50);
+    a{
+        color: rgba(245,245,245,0.63529);
+        font-size: inherit;
+    }
 
     @media #{$mobile} {
         position: sticky;

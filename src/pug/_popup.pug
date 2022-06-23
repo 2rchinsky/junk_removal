@@ -1,5 +1,5 @@
 .popup_bg
-    form.popup(action="#" id="form")
+    form.popup(action="#" id="form_popup")
         .popup_header
             .close_popup
                 i.fa.fa-times(aria-hidden="true")
@@ -8,7 +8,7 @@
             input(type="text" name="name")
             .label_text Ваше имя
         label(for="#")
-            input(type="tel" name="phone")
+            input(type="tel" name="phone" class="req")
             .label_text Ваш телефон
         label(for="#")
             textarea(name="message")

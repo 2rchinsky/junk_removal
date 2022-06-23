@@ -6,9 +6,7 @@ let popupBg = document.querySelector('.popup_bg');
 let popup = document.querySelector('.popup');
 let openPopupButtons = document.querySelectorAll('.open_popup');
 let closePopupButton = document.querySelector('.close_popup')
-function hasClass(element, className) {
-    return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
-}
+
 openPopupButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault();

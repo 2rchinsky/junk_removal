@@ -29,26 +29,46 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
+    const form_popup = document.getElementById('form_popup');
+
     form.addEventListener('submit', formSend);
+    form_popup.addEventListener('submit', formSend);
+    console.log('DOMContentLoaded')//чекаем что это выполняется после загрузки дома
 
     async function formSend(e) {
         e.preventDefault();
+        console.log('formSend') // чекаем что это функция запускается когда срабатывает addEventListener('submit'
+        let currentForm;
 
-        let error = formValidate(form);
+        if(document.getElementById('form_popup').classList.contains('active')){
+            console.log('form_popup')//чекаем что выбрана нужная форма
+            currentForm = form_popup;
+        }else {
+            console.log('form')
+            currentForm = form;
+        }
+        let error = formValidate(currentForm);
 
-        let formData = new FormData(form);
-        formData.append('image', formimage.files[0])
+        let formData = new FormData(currentForm);
+        // formData.append('image', formimage.files[0])
 
         if (error === 0) {
             let response = await fetch('https://krovsar.ru/send_test.php', {
                 method: 'POST',
                 body: formData
             });
-            if (response, ok) {
-                let result = await response.json();
-                alert(result.message)
-                formPreviev.innerHTML = '';
-                form.reset();
+            if (response) {
+                let result = await response.text(); //https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch вот тут описание что ещё есть кроме text() и json()
+                // alert(result.message)
+
+                if(result === 'ok'){
+                    form.reset()
+                }else{
+                    console.log('ошибка', result)
+                }
+
+
+
             } else {
                 alert('Ошибка')
             }
@@ -58,8 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function formValidate(form) {
+        console.log(form) //чекаем какая форма приходит
         let error = 0;
-        let formReq = document.querySelectorAll('._req');
+        let formReq = form.querySelectorAll('._req');
 
         for (let index = 0; index < formReq.length; index++) {
             const input = formReq[index];

@@ -32,7 +32,7 @@ function init() {
             // Иконка метки будет растягиваться под размер ее содержимого.
             preset: 'islands#blackStretchyIcon',
             // Метку можно перемещать.
-            draggable: true
+            draggable: false
         }),
         myPieChart = new ymaps.Placemark([
             55.847, 37.6
@@ -64,12 +64,12 @@ function init() {
     myMap.geoObjects
         .add(myGeoObject)
         .add(myPieChart)
-        .add(new ymaps.Placemark([59.927319, 30.347129], {
-            balloonContent: 'цвет <strong>Ул. Московская, д. 1</strong>'
-        }, {
-            preset: 'islands#icon',
-            iconColor: '#0095b6'
-        }));
+    // .add(new ymaps.Placemark([59.927319, 30.347129], {
+    //     balloonContent: 'цвет <strong>Ул. Московская, д. 1</strong>'
+    // }, {
+    //     preset: 'islands#icon',
+    //     iconColor: '#0095b6'
+    // }));
     myMap.behaviors
         .disable('scrollZoom')
         .disable('drag')

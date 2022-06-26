@@ -22,6 +22,10 @@
     background-color: $softGreen;
 }
 
+.contact {
+    font-size: 18px;
+}
+
 .hand_p {
     h2 {
         text-align: left;
@@ -108,4 +112,10 @@ table {
     tr {
         padding: 30px;
     }
+}
+
+.bold {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
 }

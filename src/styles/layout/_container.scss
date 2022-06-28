@@ -33,3 +33,9 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.container-fix {
+  @media #{$mobile} {
+    padding-bottom: 100px;
+  }
+}

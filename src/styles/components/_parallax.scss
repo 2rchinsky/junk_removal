@@ -19,7 +19,7 @@
     background-attachment: fixed;
     height: 600px;
 
-    @media #{$mobile} {
+    @media #{$tablet} {
         height: 785px;
     }
 

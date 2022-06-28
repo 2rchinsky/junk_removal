@@ -29,7 +29,7 @@
             justify-content: space-between;
             margin: 25px 0;
 
-            @media #{$mobile} {
+            @media #{$tablet} {
                 flex-direction: column;
             }
 
@@ -37,7 +37,7 @@
                 height: 40px;
                 padding: 0 5px;
 
-                @media #{$mobile} {
+                @media #{$tablet} {
                     width: 100%;
                     margin-bottom: 25px;
                 }

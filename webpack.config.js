@@ -59,6 +59,10 @@ module.exports = {
             template: "src/privacy.pug",
             filename: "privacy.html"
         }),
+        new HtmlWebpackPlugin({
+            template: "src/blog.pug",
+            filename: "blog.html"
+        }),
     ],
     module: {
         rules: [

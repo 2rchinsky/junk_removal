@@ -63,6 +63,11 @@ module.exports = {
             template: "src/blog.pug",
             filename: "blog.html"
         }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/dezinfekciya.pug",
+            filename: "blog/dezinfekciya.html"
+        }),
+
     ],
     module: {
         rules: [

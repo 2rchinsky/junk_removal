@@ -67,7 +67,42 @@ module.exports = {
             template: "src/blog/dezinfekciya.pug",
             filename: "blog/dezinfekciya.html"
         }),
-
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-staroj-mebeli.pug",
+            filename: "blog/vyvoz-staroj-mebeli.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-bytovoj-tekhniki.pug",
+            filename: "blog/vyvoz-bytovoj-tekhniki.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-dverej-i-ram.pug",
+            filename: "blog/vyvoz-dverej-i-ram.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/pereezd-iz-kvartiry-ili-ofisa.pug",
+            filename: "blog/pereezd-iz-kvartiry-ili-ofisa.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-mebeli-besplatno.pug",
+            filename: "blog/vyvoz-mebeli-besplatno.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-metalla.pug",
+            filename: "blog/vyvoz-metalla.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-vann.pug",
+            filename: "blog/vyvoz-vann.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/vyvoz-holodilnik.pug",
+            filename: "blog/vyvoz-holodilnik.html"
+        }),
+        // new HtmlWebpackPlugin({
+        //     template: "src/blog/works.pug",
+        //     filename: "blog/works.html"
+        // }),
     ],
     module: {
         rules: [

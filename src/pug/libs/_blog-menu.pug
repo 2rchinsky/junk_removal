@@ -1,0 +1,25 @@
+mixin list(arg)
+  - function class_active(argf){ return arg==argf?"active":"";}
+      ul
+         li(class=''+class_active('blog'))
+            a(href="/blog.html") Вывоз строительного мусора
+         li(class=''+class_active('dezinfekciya'))
+            a(href="/blog/dezinfekciya.html") Дезинфекция
+         li(class=''+class_active('vyvoz-staroj-mebeli'))
+            a(href="/blog/vyvoz-staroj-mebeli.html") Вывоз старой мебели
+         li(class=''+class_active('vyvoz-bytovoj-tekhniki'))
+            a(href="/blog/vyvoz-bytovoj-tekhniki.html") Вывоз бытовой техники
+         li(class=''+class_active('vyvoz-dverej-i-ram'))
+            a(href="/blog/vyvoz-dverej-i-ram.html") Вывоз дверей и рам
+         li(class=''+class_active('pereezd-iz-kvartiry-ili-ofisa'))
+            a(href="/blog/pereezd-iz-kvartiry-ili-ofisa.html") Переезд из квартиры или офиса
+         li(class=''+class_active('vyvoz-mebeli-besplatno'))
+            a(href="/blog/vyvoz-mebeli-besplatno.html") Вывоз мебели бесплатно
+         li(class=''+class_active('vyvoz-metalla'))
+            a(href="/blog/vyvoz-metalla.html") Вывоз металла
+         li(class=''+class_active('vyvoz-vann'))
+            a(href="/blog/vyvoz-vann.html") Вывоз ванн
+         li(class=''+class_active('vyvoz-holodilnik'))
+            a(href="/blog/vyvoz-holodilnik.html") Вывоз холодильникa
+         //- li(class=''+class_active('works'))
+         //-    a(href="/blog/works.html") Наши работы

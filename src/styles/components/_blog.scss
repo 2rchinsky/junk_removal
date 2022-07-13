@@ -5,9 +5,19 @@
       padding-bottom: 20px;
       position: relative;
 
+      @media #{$tablet} {
+          flex-direction: column;
+      }
+
       .blog_menu {
           max-width: 260px;
           width: 100%;
+
+          @media #{$tablet} {
+              max-width: 780px;
+              margin: 0 auto;
+          }
+
 
           .menu_items {
               ul {
@@ -15,6 +25,11 @@
                   flex-direction: column;
                   width: 100%;
                   margin: 0;
+
+                  @media #{$tablet} {
+                      flex-direction: row;
+                      overflow: scroll;
+                  }
 
                   li {
                       border: 1px solid white;
@@ -26,6 +41,11 @@
                       border-radius: 3px;
                       width: 100%;
                       cursor: pointer;
+
+                      @media #{$tablet} {
+                          height: 50px;
+                      }
+
 
                       &.active {
                           background: rgb(0, 63, 7);
@@ -39,7 +59,12 @@
                       a {
                           color: white;
                           font-size: 14px;
-                          width: 100%;
+
+                          @media #{$tablet} {
+                              width: 110px;
+                              text-align: center;
+                              font-size: 12px;
+                          }
                       }
                   }
               }
@@ -49,6 +74,10 @@
       .blog_content {
           max-width: 780px;
           width: 100%;
+
+          @media #{$tablet} {
+              margin: 0 auto;
+          }
 
           img {
               max-width: 100%;

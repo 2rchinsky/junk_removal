@@ -89,9 +89,10 @@ const user = {
 
 $('.block').html('jQuery is working');
 
-console.log(user)
+const isGliderWorks = document.getElementById('glider-works')
+
 new Glider(document.querySelector('.glider'), {
-    slidesToShow: 3,
+    slidesToShow: isGliderWorks ? 1 : 3,
     slidesToScroll: 1,
     draggable: true,
     dots: '.dots',

@@ -1,0 +1,36 @@
+include ../pug/libs/_libs
+include ../pug/libs/_blog-menu
+head 
+    title Наши работы
+
+html(lang='en')
+    include ../pug/_head
+    body
+        include ../pug/_header
+        include ../pug/_nav
+        .banner-second
+            .container 
+                h1 Вывоз мусора
+                a.btn.open_popup(href="#") Подробнее
+        .container 
+            .second-nav 
+                a(href='/index.html') Главная
+                span /
+                a(href="") Наши работы
+        .fixed-container.blog
+            .blog_menu 
+                .menu_items
+                    +list('works')
+            .blog_content
+                .glider#glider-works
+                    div 
+                        img.glider-img(src="/images/takelazhnie-raboti.png")
+                    div 
+                        img.glider-img(src="/images/vyvoz-staryh-okon.png")
+                    div 
+                        img.glider-img(src="/images/bytovaya-mebel.png")
+                <div role="tablist" class="dots"></div>
+        include ../pug/_form
+        include ../pug/_map
+        include ../pug/_footer
+        include ../pug/_popup

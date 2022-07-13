@@ -99,10 +99,10 @@ module.exports = {
             template: "src/blog/vyvoz-holodilnik.pug",
             filename: "blog/vyvoz-holodilnik.html"
         }),
-        // new HtmlWebpackPlugin({
-        //     template: "src/blog/works.pug",
-        //     filename: "blog/works.html"
-        // }),
+        new HtmlWebpackPlugin({
+            template: "src/blog/works.pug",
+            filename: "blog/works.html"
+        }),
     ],
     module: {
         rules: [
